@@ -33,7 +33,7 @@ def lookup_ticker(company):
         'Toyota Motor Company': 'TM',
         'Ford Motor Company': 'F',
         'Honda Motor Co': 'HMC'}
-    ticker = stocks_dictionary(company)
+    ticker = stocks_dictionary[company]
     return ticker
 
 
@@ -113,6 +113,7 @@ async def update_csv_stock():
 
             # Use the deque to make a DataFrame
             df = pd.DataFrame(records_deque)
+            
 
             # Save the DataFrame to the CSV file, deleting its contents before writing
             df.to_csv(fp, index=False, mode="w")
@@ -123,3 +124,5 @@ async def update_csv_stock():
 
     except Exception as e:
         logger.error(f"ERROR in update_csv_location: {e}")
+
+    
