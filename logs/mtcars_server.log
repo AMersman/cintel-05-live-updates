@@ -1,32 +1,36 @@
-2023-07-29 12:06:56,584.mtcars_server.INFO =============================================================
-2023-07-29 12:06:56,584.mtcars_server.INFO Today is 2023-07-29 at 12:06 PM
-2023-07-29 12:06:56,584.mtcars_server.INFO This file is running on: posix Darwin 19.6.0
-2023-07-29 12:06:56,584.mtcars_server.INFO The Python version is: 3.8.8
-2023-07-29 12:06:56,584.mtcars_server.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
-2023-07-29 12:06:56,584.mtcars_server.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
-2023-07-29 12:06:56,585.mtcars_server.INFO =============================================================
-2023-07-29 12:06:58,965.mtcars_server.DEBUG filter message: Showing 32 of 32 records
-2023-07-29 12:06:59,124.mtcars_server.INFO Starting mtcars_output_widget1
-2023-07-29 12:06:59,479.mtcars_server.INFO Starting mtcars_plot1
-2023-07-29 12:07:00,891.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
-2023-07-29 12:07:00,896.mtcars_server.INFO READING df len 3
-2023-07-29 12:07:00,896.mtcars_server.INFO init reactive_temp_df len: 3
-2023-07-29 12:07:00,897.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-07-29 12:07:00,897.mtcars_server.INFO Recent Temperature in F for ELY MN.
+2023-07-29 12:20:16,220.mtcars_server.INFO =============================================================
+2023-07-29 12:20:16,220.mtcars_server.INFO Today is 2023-07-29 at 12:20 PM
+2023-07-29 12:20:16,220.mtcars_server.INFO This file is running on: posix Darwin 19.6.0
+2023-07-29 12:20:16,220.mtcars_server.INFO The Python version is: 3.8.8
+2023-07-29 12:20:16,220.mtcars_server.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
+2023-07-29 12:20:16,220.mtcars_server.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
+2023-07-29 12:20:16,221.mtcars_server.INFO =============================================================
+2023-07-29 12:20:17,420.mtcars_server.DEBUG filter message: Showing 32 of 32 records
+2023-07-29 12:20:17,497.mtcars_server.INFO Starting mtcars_output_widget1
+2023-07-29 12:20:17,832.mtcars_server.INFO Starting mtcars_plot1
+2023-07-29 12:20:19,208.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 12:20:19,211.mtcars_server.INFO READING df len 3
+2023-07-29 12:20:19,211.mtcars_server.INFO init reactive_temp_df len: 3
+2023-07-29 12:20:19,212.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-07-29 12:20:19,212.mtcars_server.INFO Recent Temperature in F for ELY MN.
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-07-29 12:07:00,899.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-07-29 12:07:00,902.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-07-29 12:07:00,988.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
-2023-07-29 12:07:00,991.mtcars_server.INFO READING df len 3
-2023-07-29 12:07:00,992.mtcars_server.INFO init reactive_price len: 3
-2023-07-29 12:07:00,994.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-07-29 12:07:00,994.mtcars_server.INFO Recent Temperature in F for Tesla Inc.
+2023-07-29 12:20:19,214.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-07-29 12:20:19,218.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-07-29 12:20:19,325.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_company.csv
+2023-07-29 12:20:19,329.mtcars_server.INFO READING df len 0
+2023-07-29 12:20:19,329.mtcars_server.INFO init reactive_price len: 0
+2023-07-29 12:20:19,330.mtcars_server.INFO mtcars_price_company_string starting
+2023-07-29 12:20:19,331.mtcars_server.INFO Recent Pricefor Tesla Inc.
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-07-29 12:07:00,997.mtcars_server.INFO Rendering TEMP table with 0 rows
-2023-07-29 12:07:01,000.mtcars_server.INFO Rendering TEMP chart with 0 points
-2023-07-29 12:07:01,124.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
-2023-07-29 12:07:01,129.mtcars_server.INFO READING df len 3
-2023-07-29 12:07:01,131.mtcars_server.INFO Rendering TEMP table with 0 rows
-2023-07-29 12:07:01,136.mtcars_server.INFO Rendering TEMP chart with 0 points
+2023-07-29 12:20:19,345.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-07-29 12:20:19,345.mtcars_server.INFO Recent Temperature in F for Tesla Inc.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-07-29 12:20:19,347.mtcars_server.INFO Rendering TEMP table with 0 rows
+2023-07-29 12:20:19,351.mtcars_server.INFO Rendering TEMP chart with 0 points
+2023-07-29 12:20:19,500.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 12:20:19,503.mtcars_server.INFO READING df len 3
+2023-07-29 12:20:19,506.mtcars_server.INFO Rendering TEMP table with 0 rows
+2023-07-29 12:20:19,511.mtcars_server.INFO Rendering TEMP chart with 0 points

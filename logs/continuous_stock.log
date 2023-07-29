@@ -1,7 +1,13 @@
-2023-07-29 12:09:21,000.continuous_stock.INFO =============================================================
-2023-07-29 12:09:21,000.continuous_stock.INFO Today is 2023-07-29 at 12:09 PM
-2023-07-29 12:09:21,000.continuous_stock.INFO This file is running on: posix Darwin 19.6.0
-2023-07-29 12:09:21,000.continuous_stock.INFO The Python version is: 3.8.8
-2023-07-29 12:09:21,001.continuous_stock.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
-2023-07-29 12:09:21,001.continuous_stock.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
-2023-07-29 12:09:21,001.continuous_stock.INFO =============================================================
+2023-07-29 12:20:15,071.continuous_stock.INFO =============================================================
+2023-07-29 12:20:15,071.continuous_stock.INFO Today is 2023-07-29 at 12:20 PM
+2023-07-29 12:20:15,071.continuous_stock.INFO This file is running on: posix Darwin 19.6.0
+2023-07-29 12:20:15,071.continuous_stock.INFO The Python version is: 3.8.8
+2023-07-29 12:20:15,072.continuous_stock.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
+2023-07-29 12:20:15,072.continuous_stock.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
+2023-07-29 12:20:15,072.continuous_stock.INFO =============================================================
+2023-07-29 12:20:19,498.continuous_stock.INFO Calling update_csv_location
+2023-07-29 12:20:19,498.continuous_stock.INFO update_interval: 60
+2023-07-29 12:20:19,498.continuous_stock.INFO total_runtime: 900
+2023-07-29 12:20:19,498.continuous_stock.INFO num_updates: 10
+2023-07-29 12:20:19,498.continuous_stock.INFO Initialized csv file at /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_company.csv
+2023-07-29 12:20:19,498.continuous_stock.ERROR ERROR in update_csv_location: 'dict' object is not callable

@@ -1,7 +1,40 @@
-2023-07-29 12:09:20,993.continuous_location.INFO =============================================================
-2023-07-29 12:09:20,994.continuous_location.INFO Today is 2023-07-29 at 12:09 PM
-2023-07-29 12:09:20,999.continuous_location.INFO This file is running on: posix Darwin 19.6.0
-2023-07-29 12:09:20,999.continuous_location.INFO The Python version is: 3.8.8
-2023-07-29 12:09:20,999.continuous_location.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
-2023-07-29 12:09:20,999.continuous_location.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
-2023-07-29 12:09:20,999.continuous_location.INFO =============================================================
+2023-07-29 12:20:15,063.continuous_location.INFO =============================================================
+2023-07-29 12:20:15,064.continuous_location.INFO Today is 2023-07-29 at 12:20 PM
+2023-07-29 12:20:15,069.continuous_location.INFO This file is running on: posix Darwin 19.6.0
+2023-07-29 12:20:15,069.continuous_location.INFO The Python version is: 3.8.8
+2023-07-29 12:20:15,069.continuous_location.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
+2023-07-29 12:20:15,069.continuous_location.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
+2023-07-29 12:20:15,069.continuous_location.INFO =============================================================
+2023-07-29 12:20:19,487.continuous_location.INFO Calling update_csv_location
+2023-07-29 12:20:19,488.continuous_location.INFO update_interval: 60
+2023-07-29 12:20:19,488.continuous_location.INFO total_runtime: 900
+2023-07-29 12:20:19,488.continuous_location.INFO num_updates: 10
+2023-07-29 12:20:19,489.continuous_location.INFO Initialized csv file at /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 12:20:19,489.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:20:19,492.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.903237&lon=-91.867087&appid=None&units=imperial
+2023-07-29 12:20:19,492.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:20:19,493.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=36.5323&lon=-116.93&appid=None&units=imperial
+2023-07-29 12:20:19,493.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:20:19,494.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=40.346102&lon=-94.872471&appid=None&units=imperial
+2023-07-29 12:20:19,497.continuous_location.INFO Saving temperatures to /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 12:21:19,497.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:21:19,498.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.903237&lon=-91.867087&appid=None&units=imperial
+2023-07-29 12:21:19,498.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:21:19,499.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=36.5323&lon=-116.93&appid=None&units=imperial
+2023-07-29 12:21:19,500.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:21:19,500.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=40.346102&lon=-94.872471&appid=None&units=imperial
+2023-07-29 12:21:19,504.continuous_location.INFO Saving temperatures to /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 12:22:19,504.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:22:19,505.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.903237&lon=-91.867087&appid=None&units=imperial
+2023-07-29 12:22:19,505.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:22:19,506.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=36.5323&lon=-116.93&appid=None&units=imperial
+2023-07-29 12:22:19,507.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:22:19,507.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=40.346102&lon=-94.872471&appid=None&units=imperial
+2023-07-29 12:22:19,532.continuous_location.INFO Saving temperatures to /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 12:23:19,531.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:23:19,532.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.903237&lon=-91.867087&appid=None&units=imperial
+2023-07-29 12:23:19,532.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:23:19,533.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=36.5323&lon=-116.93&appid=None&units=imperial
+2023-07-29 12:23:19,533.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-07-29 12:23:19,534.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=40.346102&lon=-94.872471&appid=None&units=imperial
+2023-07-29 12:23:19,536.continuous_location.INFO Saving temperatures to /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv

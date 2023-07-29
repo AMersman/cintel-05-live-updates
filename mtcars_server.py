@@ -59,6 +59,7 @@ def get_mtcars_server_functions(input, output, session):
     # Initialize the values on startup
 
     reactive_location = reactive.Value("ELY MN")
+    reactive_company = reactive.Value("Tesla Inc")
 
     # Previously, we had a single reactive dataframe to hold filtered results
     reactive_df = reactive.Value()
@@ -248,10 +249,10 @@ def get_mtcars_server_functions(input, output, session):
     def mtcars_company_chart():
         df = get_mtcars_price_df()
         # Filter the data based on the selected location
-        df_company = df[df["Company"] == reactive_company.get()]
+        df_company = df[df["company"] == reactive_company.get()]
         logger.info(f"Rendering Price chart with {len(df_company)} points")
         plotly_express_plot = px.line(
-            df_company, x="Time", y="Price", color="Company", markers=True
+            df_company, x="Time", y="Price", color="company", markers=True
         )
         plotly_express_plot.update_layout(title="Continuous Price")
         return plotly_express_plot
