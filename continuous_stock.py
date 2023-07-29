@@ -4,11 +4,13 @@ from datetime import datetime
 from pathlib import Path
 import os
 from random import randint
+from numpy import result_type
 
 # External Packages
 import pandas as pd
 from collections import deque
 from dotenv import load_dotenv
+from continuous_location import init_csv_file
 
 # Local Imports
 from fetch import fetch_from_url
@@ -56,7 +58,7 @@ async def get_stock_price(ticker):
     logger.info(f"Calling fetch_from_url for {stock_price_api_url}")
     result = await fetch_from_url(stock_price_api_url, "json")
     logger.info(f"Data from Yahoo: {result}")
-    price = results.data['optionChain']['result'][0]['quote']['regularMarketPrice']
+    price = result_type.data['optionChain']['result'][0]['quote']['regularMarketPrice']
     # price = randint(132, 148)
     return price
 
@@ -89,7 +91,7 @@ async def update_csv_stock():
         # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
-        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_location.csv")
+        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_company.csv")
 
         # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):
