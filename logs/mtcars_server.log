@@ -1,0 +1,31 @@
+2023-07-29 11:43:21,084.mtcars_server.INFO =============================================================
+2023-07-29 11:43:21,085.mtcars_server.INFO Today is 2023-07-29 at 11:43 AM
+2023-07-29 11:43:21,085.mtcars_server.INFO This file is running on: posix Darwin 19.6.0
+2023-07-29 11:43:21,085.mtcars_server.INFO The Python version is: 3.8.8
+2023-07-29 11:43:21,085.mtcars_server.INFO The active environment path is:   /Users/ashleymersman/opt/anaconda3
+2023-07-29 11:43:21,085.mtcars_server.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
+2023-07-29 11:43:21,085.mtcars_server.INFO =============================================================
+2023-07-29 11:43:33,020.mtcars_server.DEBUG filter message: Showing 32 of 32 records
+2023-07-29 11:43:33,074.mtcars_server.INFO Starting mtcars_output_widget1
+2023-07-29 11:43:33,490.mtcars_server.INFO Starting mtcars_plot1
+2023-07-29 11:43:34,807.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 11:43:34,810.mtcars_server.INFO READING df len 3
+2023-07-29 11:43:34,811.mtcars_server.INFO init reactive_temp_df len: 3
+2023-07-29 11:43:34,812.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-07-29 11:43:34,812.mtcars_server.INFO Recent Temperature in F for ELY MN.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-07-29 11:43:34,814.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-07-29 11:43:34,818.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-07-29 11:43:34,924.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 11:43:34,927.mtcars_server.INFO READING df len 3
+2023-07-29 11:43:34,928.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-07-29 11:43:34,931.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-07-29 11:44:35,094.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 11:44:35,098.mtcars_server.INFO READING df len 6
+2023-07-29 11:44:35,099.mtcars_server.INFO Rendering TEMP table with 2 rows
+2023-07-29 11:44:35,104.mtcars_server.INFO Rendering TEMP chart with 2 points
+2023-07-29 11:45:35,295.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
+2023-07-29 11:45:35,298.mtcars_server.INFO READING df len 9
+2023-07-29 11:45:35,299.mtcars_server.INFO Rendering TEMP table with 3 rows
+2023-07-29 11:45:35,303.mtcars_server.INFO Rendering TEMP chart with 3 points
