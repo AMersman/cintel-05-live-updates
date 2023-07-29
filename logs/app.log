@@ -1,10 +1,10 @@
-2023-07-29 11:43:21,088.app.INFO =============================================================
-2023-07-29 11:43:21,089.app.INFO Today is 2023-07-29 at 11:43 AM
-2023-07-29 11:43:21,089.app.INFO This file is running on: posix Darwin 19.6.0
-2023-07-29 11:43:21,089.app.INFO The Python version is: 3.8.8
-2023-07-29 11:43:21,089.app.INFO The active environment path is:   /Users/ashleymersman/opt/anaconda3
-2023-07-29 11:43:21,089.app.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
-2023-07-29 11:43:21,089.app.INFO =============================================================
-2023-07-29 11:43:33,005.app.INFO Starting server ...
-2023-07-29 11:43:33,006.app.INFO Starting continuous updates ...
-2023-07-29 11:43:34,916.app.INFO Calling continuous updates ...
+2023-07-29 12:06:56,586.app.INFO =============================================================
+2023-07-29 12:06:56,586.app.INFO Today is 2023-07-29 at 12:06 PM
+2023-07-29 12:06:56,586.app.INFO This file is running on: posix Darwin 19.6.0
+2023-07-29 12:06:56,586.app.INFO The Python version is: 3.8.8
+2023-07-29 12:06:56,587.app.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
+2023-07-29 12:06:56,587.app.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
+2023-07-29 12:06:56,587.app.INFO =============================================================
+2023-07-29 12:06:58,949.app.INFO Starting server ...
+2023-07-29 12:06:58,950.app.INFO Starting continuous updates ...
+2023-07-29 12:07:01,112.app.INFO Calling continuous updates ...

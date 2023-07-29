@@ -48,6 +48,7 @@ logger, logname = setup_logger(__name__)
 
 # Declare our file path variables globally so they can be used in all the functions (like logger)
 csv_locations = Path(__file__).parent.joinpath("data").joinpath("mtcars_location.csv")
+csv_companies = Path(__file__).parent.joinpath("data").joinpath("mtcars_company.csv")
 csv_stocks = Path(__file__).parent.joinpath("data").joinpath("mtcars_stock.csv")
 
 
@@ -198,6 +199,62 @@ def get_mtcars_server_functions(input, output, session):
         plotly_express_plot.update_layout(title="Continuous Temperature (F)")
         return plotly_express_plot
 
+
+   ###############################################################
+    # CONTINUOUS Company UPDATES (string, table, chart)
+    ###############################################################
+
+    @reactive.Effect
+    @reactive.event(input.MTCARS_CO_SELECT)
+    def _():
+        """Set two reactive values (the location and temps df) when user changes location"""
+        reactive_location.set(input.MTCARS_CO_SELECT())
+        # init_mtcars_temps_csv()
+        df = get_mtcars_price_df()
+        logger.info(f"init reactive_price len: {len(df)}")
+
+    @reactive.file_reader(str(csv_companies))
+    def get_mtcars_price_df():
+        """Return mtcars temperatures pandas Dataframe."""
+        logger.info(f"READING df from {csv_companies}")
+        df = pd.read_csv(csv_companies)
+        logger.info(f"READING df len {len(df)}")
+        return df
+
+    @output
+    @render.text
+    def mtcars_company_string():
+        """Return a string based on selected location."""
+        logger.info("mtcars_price_company_string starting")
+        selected = reactive_location.get()
+        line1 = f"Recent Pricefor {selected}."
+        line2 = "Updated once per minute for 15 minutes."
+        line3 = "Keeps the most recent 10 minutes of data."
+        message = f"{line1}\n{line2}\n{line3}"
+        logger.info(f"{message}")
+        return message
+
+    @output
+    @render.table
+    def mtcars_company_table():
+        df = get_mtcars_price_df()
+        # Filter the data based on the selected location
+        df_company = df[df["Company"] == reactive_location.get()]
+        logger.info(f"Rendering Price table with {len(df_company)} rows")
+        return df_company
+
+    @output
+    @render_widget
+    def mtcars_company_chart():
+        df = get_mtcars_price_df()
+        # Filter the data based on the selected location
+        df_company = df[df["Company"] == reactive_company.get()]
+        logger.info(f"Rendering Price chart with {len(df_company)} points")
+        plotly_express_plot = px.line(
+            df_company, x="Time", y="Price", color="Company", markers=True
+        )
+        plotly_express_plot.update_layout(title="Continuous Price")
+        return plotly_express_plot
     ###############################################################
 
     # return a list of function names for use in reactive outputs
@@ -209,9 +266,9 @@ def get_mtcars_server_functions(input, output, session):
         mtcars_output_widget1,
         mtcars_plot1,
         mtcars_plot2,
-        mtcars_location_string,
-        mtcars_location_table,
-        mtcars_location_chart,
+        mtcars_company_string,
+        mtcars_company_table,
+        mtcars_company_chart,
     ]
 
 
