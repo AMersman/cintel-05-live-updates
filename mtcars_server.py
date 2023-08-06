@@ -223,7 +223,7 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.text
-    def mtcars_price_string():
+    def mtcars_stock_string():
         """Return a string based on selected location."""
         logger.info("mtcars_price_company_string starting")
         selected = reactive_stock.get()
@@ -236,7 +236,7 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.table
-    def mtcars_price_table():
+    def mtcars_stock_table():
         df = get_mtcars_price_df()
         # Filter the data based on the selected location
         df_company = df[df["Company"] == reactive_stock.get()]
@@ -245,7 +245,7 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render_widget
-    def mtcars_price_chart():
+    def mtcars_stock_chart():
         df = get_mtcars_price_df()
         # Filter the data based on the selected location
         df_company = df[df["Company"] == reactive_stock.get()]
@@ -260,7 +260,7 @@ def get_mtcars_server_functions(input, output, session):
     # return a list of function names for use in reactive outputs
     # Includes our 2 new selection strings and 2 new output widgets
 
-    return mtcars_record_count_string, mtcars_filtered_table, mtcars_output_widget1, mtcars_plot1, mtcars_plot2, mtcars_location_string, mtcars_location_table, mtcars_location_chart, mtcars_price_string, mtcars_price_table, mtcars_price_chart
+    return mtcars_record_count_string, mtcars_filtered_table, mtcars_output_widget1, mtcars_plot1, mtcars_plot2, mtcars_location_string, mtcars_location_table, mtcars_location_chart, mtcars_stock_string, mtcars_stock_table, mtcars_stock_chart
     
 
 
