@@ -2,8 +2,8 @@
     "https://api.shinyapps.io": {
         "server_url": "https://api.shinyapps.io",
         "filename": "/Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates",
-        "app_url": "https://amersman.shinyapps.io/cintel-05-app/",
-        "app_id": 9502407,
+        "app_url": "https://amersman.shinyapps.io/cintel-05-app1/",
+        "app_id": 9563698,
         "app_guid": null,
         "title": "cintel-05-app",
         "app_mode": "python-shiny",

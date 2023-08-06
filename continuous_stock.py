@@ -9,7 +9,6 @@ from numpy import result_type
 # External Packages
 import pandas as pd
 from collections import deque
-from dotenv import load_dotenv
 from continuous_location import init_csv_file
 
 # Local Imports
@@ -37,28 +36,14 @@ def lookup_ticker(company):
     return ticker
 
 
-
-# def lookup_lat_long(location):
-#     """Return the latitude and longitude for the given location."""
-#     locations_dictionary = {
-#         "ELY MN": {"latitude": 47.903237, "longitude": -91.867087},
-#         "Death Valley CA": {"latitude": 36.5323, "longitude": -116.93},
-#         "Maryville MO": {"latitude": 40.346102, "longitude": -94.872471},
-#     }
-#     answer_dict = locations_dictionary[location]
-#     lat = answer_dict["latitude"]
-#     long = answer_dict["longitude"]
-#     return lat, long
-
-
 async def get_stock_price(ticker):
-    logger.info("Calling get_stock_price for {ticker}")
+    logger.info(f"Calling get_stock_price for {ticker}")
     # api_key = get_API_key()
     stock_price_api_url = f'https://query1.finance.yahoo.com/v7/finance/options/{ticker}'
     logger.info(f"Calling fetch_from_url for {stock_price_api_url}")
     result = await fetch_from_url(stock_price_api_url, "json")
     logger.info(f"Data from Yahoo: {result}")
-    price = result_type.data['optionChain']['result'][0]['quote']['regularMarketPrice']
+    price = result.data['optionChain']['result'][0]['quote']['regularMarketPrice']
     # price = randint(132, 148)
     return price
 
@@ -72,15 +57,15 @@ def init_stock_csv_file(file_path):
 
 
 async def update_csv_stock():
-    """Update the CSV file with the latest location information."""
-    logger.info("Calling update_csv_location")
+    """Update the CSV file with the latest stock price information."""
+    logger.info("Calling update_csv_stock")
     try:
         companies = [
             "Tesla Inc", 
             "General Motors Company", 
             "Toyota Motor Company",
             'Ford Motor Company',
-            'Honda Motor Company',]
+            'Honda Motor Co']
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
         num_updates = 10  # Keep the most recent 10 readings
@@ -91,7 +76,7 @@ async def update_csv_stock():
         # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
-        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_company.csv")
+        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_stock.csv")
 
         # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):
@@ -123,6 +108,6 @@ async def update_csv_stock():
             await asyncio.sleep(update_interval)
 
     except Exception as e:
-        logger.error(f"ERROR in update_csv_location: {e}")
+        logger.error(f"ERROR in update_csv_stock: {e}")
 
     

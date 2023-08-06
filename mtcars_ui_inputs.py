@@ -35,7 +35,7 @@ def get_mtcars_inputs():
             "General Motors Company", 
             "Toyota Motor Company",
             'Ford Motor Company',
-            'Honda Motor Company',],
+            'Honda Motor Co',],
             selected="Tesla Inc",
         ),
         ui.tags.hr(),

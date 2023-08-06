@@ -1,1 +1,11 @@
-Location,Latitude,Longitude,Time,Temp_F
+Company,Ticker,Time,Price
+Tesla Inc,TSLA,2023-08-06 17:45:59,253.86
+General Motors Company,GM,2023-08-06 17:45:59,36.57
+Toyota Motor Company,TM,2023-08-06 17:46:00,170.79
+Ford Motor Company,F,2023-08-06 17:46:00,12.89
+Honda Motor Co,HMC,2023-08-06 17:46:00,30.85
+Tesla Inc,TSLA,2023-08-06 17:47:00,253.86
+General Motors Company,GM,2023-08-06 17:47:00,36.57
+Toyota Motor Company,TM,2023-08-06 17:47:01,170.79
+Ford Motor Company,F,2023-08-06 17:47:01,12.89
+Honda Motor Co,HMC,2023-08-06 17:47:01,30.85

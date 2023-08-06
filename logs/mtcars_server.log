@@ -1,54 +1,7 @@
-2023-07-29 12:32:01,026.mtcars_server.INFO =============================================================
-2023-07-29 12:32:01,026.mtcars_server.INFO Today is 2023-07-29 at 12:32 PM
-2023-07-29 12:32:01,026.mtcars_server.INFO This file is running on: posix Darwin 19.6.0
-2023-07-29 12:32:01,026.mtcars_server.INFO The Python version is: 3.8.8
-2023-07-29 12:32:01,027.mtcars_server.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
-2023-07-29 12:32:01,027.mtcars_server.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
-2023-07-29 12:32:01,027.mtcars_server.INFO =============================================================
-2023-07-29 12:32:14,239.mtcars_server.DEBUG filter message: Showing 32 of 32 records
-2023-07-29 12:32:14,337.mtcars_server.INFO Starting mtcars_output_widget1
-2023-07-29 12:32:14,762.mtcars_server.INFO Starting mtcars_plot1
-2023-07-29 12:32:16,116.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_location.csv
-2023-07-29 12:32:16,119.mtcars_server.INFO READING df len 3
-2023-07-29 12:32:16,119.mtcars_server.INFO init reactive_temp_df len: 3
-2023-07-29 12:32:16,120.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-07-29 12:32:16,120.mtcars_server.INFO Recent Temperature in F for ELY MN.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:16,122.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-07-29 12:32:16,125.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-07-29 12:32:16,204.mtcars_server.INFO READING df from /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/data/mtcars_company.csv
-2023-07-29 12:32:16,207.mtcars_server.INFO READING df len 0
-2023-07-29 12:32:16,208.mtcars_server.INFO init reactive_price len: 0
-2023-07-29 12:32:16,208.mtcars_server.INFO mtcars_price_company_string starting
-2023-07-29 12:32:16,208.mtcars_server.INFO Recent Pricefor Tesla Inc.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:16,218.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-07-29 12:32:16,218.mtcars_server.INFO Recent Temperature in F for Tesla Inc.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:16,219.mtcars_server.INFO Rendering TEMP table with 0 rows
-2023-07-29 12:32:16,223.mtcars_server.INFO Rendering TEMP chart with 0 points
-2023-07-29 12:32:51,122.mtcars_server.INFO init reactive_temp_df len: 3
-2023-07-29 12:32:51,124.mtcars_server.INFO mtcars_price_company_string starting
-2023-07-29 12:32:51,134.mtcars_server.INFO Recent Pricefor Death Valley CA.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:51,135.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-07-29 12:32:51,136.mtcars_server.INFO Recent Temperature in F for Death Valley CA.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:51,139.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-07-29 12:32:51,144.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-07-29 12:32:56,793.mtcars_server.INFO init reactive_temp_df len: 3
-2023-07-29 12:32:56,794.mtcars_server.INFO mtcars_price_company_string starting
-2023-07-29 12:32:56,795.mtcars_server.INFO Recent Pricefor Maryville MO.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:56,796.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-07-29 12:32:56,797.mtcars_server.INFO Recent Temperature in F for Maryville MO.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-07-29 12:32:56,799.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-07-29 12:32:56,803.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-06 17:53:51,201.mtcars_server.INFO =============================================================
+2023-08-06 17:53:51,201.mtcars_server.INFO Today is 2023-08-06 at 05:53 PM
+2023-08-06 17:53:51,201.mtcars_server.INFO This file is running on: posix Darwin 19.6.0
+2023-08-06 17:53:51,201.mtcars_server.INFO The Python version is: 3.8.8
+2023-08-06 17:53:51,201.mtcars_server.INFO The active environment path is:   /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates/.venv
+2023-08-06 17:53:51,202.mtcars_server.INFO The current working directory is: /Users/ashleymersman/Desktop/Continuous_Intelligence/cintel-05-live-updates
+2023-08-06 17:53:51,202.mtcars_server.INFO =============================================================

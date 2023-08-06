@@ -48,7 +48,6 @@ logger, logname = setup_logger(__name__)
 
 # Declare our file path variables globally so they can be used in all the functions (like logger)
 csv_locations = Path(__file__).parent.joinpath("data").joinpath("mtcars_location.csv")
-csv_companies = Path(__file__).parent.joinpath("data").joinpath("mtcars_company.csv")
 csv_stocks = Path(__file__).parent.joinpath("data").joinpath("mtcars_stock.csv")
 
 
@@ -59,7 +58,7 @@ def get_mtcars_server_functions(input, output, session):
     # Initialize the values on startup
 
     reactive_location = reactive.Value("ELY MN")
-    reactive_company = reactive.Value("Tesla Inc")
+    reactive_stock = reactive.Value("Tesla Inc")
 
     # Previously, we had a single reactive dataframe to hold filtered results
     reactive_df = reactive.Value()
@@ -202,33 +201,33 @@ def get_mtcars_server_functions(input, output, session):
 
 
    ###############################################################
-    # CONTINUOUS Company UPDATES (string, table, chart)
+    # CONTINUOUS STOCK UPDATES (string, table, chart)
     ###############################################################
 
     @reactive.Effect
-    @reactive.event(input.MTCARS_CO_SELECT)
+    @reactive.event(input.MTCARS_STOCK_SELECT)
     def _():
         """Set two reactive values (the location and temps df) when user changes location"""
-        reactive_location.set(input.MTCARS_CO_SELECT())
+        reactive_stock.set(input.MTCARS_CO_SELECT())
         # init_mtcars_temps_csv()
         df = get_mtcars_price_df()
         logger.info(f"init reactive_price len: {len(df)}")
 
-    @reactive.file_reader(str(csv_companies))
+    @reactive.file_reader(str(csv_stocks))
     def get_mtcars_price_df():
         """Return mtcars temperatures pandas Dataframe."""
-        logger.info(f"READING df from {csv_companies}")
-        df = pd.read_csv(csv_companies)
+        logger.info(f"READING df from {csv_stocks}")
+        df = pd.read_csv(csv_stocks)
         logger.info(f"READING df len {len(df)}")
         return df
 
     @output
     @render.text
-    def mtcars_company_string():
+    def mtcars_price_string():
         """Return a string based on selected location."""
         logger.info("mtcars_price_company_string starting")
-        selected = reactive_location.get()
-        line1 = f"Recent Pricefor {selected}."
+        selected = reactive_stock.get()
+        line1 = f"Recent Price for {selected}."
         line2 = "Updated once per minute for 15 minutes."
         line3 = "Keeps the most recent 10 minutes of data."
         message = f"{line1}\n{line2}\n{line3}"
@@ -237,22 +236,22 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.table
-    def mtcars_company_table():
+    def mtcars_price_table():
         df = get_mtcars_price_df()
         # Filter the data based on the selected location
-        df_company = df[df["Company"] == reactive_location.get()]
+        df_company = df[df["Company"] == reactive_stock.get()]
         logger.info(f"Rendering Price table with {len(df_company)} rows")
         return df_company
 
     @output
     @render_widget
-    def mtcars_company_chart():
+    def mtcars_price_chart():
         df = get_mtcars_price_df()
         # Filter the data based on the selected location
-        df_company = df[df["company"] == reactive_company.get()]
+        df_company = df[df["Company"] == reactive_stock.get()]
         logger.info(f"Rendering Price chart with {len(df_company)} points")
         plotly_express_plot = px.line(
-            df_company, x="Time", y="Price", color="company", markers=True
+            df_company, x="Time", y="Price", color="Company", markers=True
         )
         plotly_express_plot.update_layout(title="Continuous Price")
         return plotly_express_plot
@@ -261,16 +260,8 @@ def get_mtcars_server_functions(input, output, session):
     # return a list of function names for use in reactive outputs
     # Includes our 2 new selection strings and 2 new output widgets
 
-    return [
-        mtcars_record_count_string,
-        mtcars_filtered_table,
-        mtcars_output_widget1,
-        mtcars_plot1,
-        mtcars_plot2,
-        mtcars_company_string,
-        mtcars_company_table,
-        mtcars_company_chart,
-    ]
+    return mtcars_record_count_string, mtcars_filtered_table, mtcars_output_widget1, mtcars_plot1, mtcars_plot2, mtcars_location_string, mtcars_location_table, mtcars_location_chart, mtcars_price_string, mtcars_price_table, mtcars_price_chart
+    
 
 
 """

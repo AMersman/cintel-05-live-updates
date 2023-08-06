@@ -36,11 +36,11 @@ async def update_csv_files():
         logger.info("Calling continuous updates ...")
         task1 = asyncio.create_task(update_csv_location())
         task2 = asyncio.create_task(update_csv_stock())
-        await asyncio.gather(task1)
+        await asyncio.gather(task1, task2)
         await asyncio.sleep(60)  # wait for 60 seconds
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.darkly(),
+    shinyswatch.theme.lumen(),
     ui.nav(
         "MT_Cars",
         ui.layout_sidebar(
