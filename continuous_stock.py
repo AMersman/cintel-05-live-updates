@@ -27,18 +27,17 @@ logger, log_filename = setup_logger(__file__)
 
 def lookup_ticker(company):
     stocks_dictionary ={
-        'Tesla Inc': 'TSLA', 
-        'General Motors Company': 'GM',
-        'Toyota Motor Company': 'TM',
-        'Ford Motor Company': 'F',
-        'Honda Motor Co': 'HMC'}
+        "Tesla Inc": "TSLA",
+        "General Motors Company": "GM",
+        "Toyota Motor Corporation": "TM",
+        "Ford Motor Company": "F",
+        "Honda Motor Co": "HMC",}
     ticker = stocks_dictionary[company]
     return ticker
 
 
 async def get_stock_price(ticker):
     logger.info(f"Calling get_stock_price for {ticker}")
-    # api_key = get_API_key()
     stock_price_api_url = f'https://query1.finance.yahoo.com/v7/finance/options/{ticker}'
     logger.info(f"Calling fetch_from_url for {stock_price_api_url}")
     result = await fetch_from_url(stock_price_api_url, "json")
@@ -61,11 +60,11 @@ async def update_csv_stock():
     logger.info("Calling update_csv_stock")
     try:
         companies = [
-            "Tesla Inc", 
-            "General Motors Company", 
-            "Toyota Motor Company",
-            'Ford Motor Company',
-            'Honda Motor Co']
+            "Tesla Inc",
+            "General Motors Company",
+            "Toyota Motor Corporation",
+            "Ford Motor Company",
+            "Honda Motor Co",]
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
         num_updates = 10  # Keep the most recent 10 readings
