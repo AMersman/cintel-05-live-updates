@@ -9,6 +9,7 @@ from numpy import result_type
 # External Packages
 import pandas as pd
 from collections import deque
+import yfinance as yf
 from continuous_location import init_csv_file
 
 # Local Imports
